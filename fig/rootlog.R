@@ -1,0 +1,16 @@
+args = commandArgs()
+basename = sub(".R$", "", sub("^--file=(.*/)?", "", args[grep("^--file=", args)]))
+if (length(basename) != 0)
+    pdf(file=paste0(basename, "_tmp.pdf"), colormodel="gray", width=7, height=1.5)
+# par(family="HiraKakuProN-W3")
+par(family="Palatino")
+par(mgp=c(1.5,0.5,0)) # title and axis margins. default: c(3,1,0)
+par(mar=c(5,2,0,0)+0.1) # bottom, left, top, right margins. default: c(5,4,4,2)+0.1
+plot(NULL, xlim=c(0,1), ylim=c(0,1), xlab="", ylab="", yaxs="i", axes=FALSE)
+axis(1, at=sqrt(0:10)/sqrt(10), labels=0:10)
+axis(1, at=log(1:10)/log(10), labels=1:10, line=2)
+mtext("sqrt", 1, line=0, adj=-0.03)
+mtext("log", 1, line=2, adj=-0.03)
+dev.off()
+embedFonts(paste0(basename, "_tmp.pdf"), outfile=paste0(basename, ".pdf"),
+           options="-c \"<</NeverEmbed []>> setdistillerparams\" -f ")
