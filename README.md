@@ -17,4 +17,6 @@
 
 ## 蛇足
 
-[二封筒の問題](https://oku.edu.mie-u.ac.jp/~okumura/stat/exchangeparadox.html)（本書を脱稿してから見つけたおもしろい問題）
+* [二封筒の問題](https://oku.edu.mie-u.ac.jp/~okumura/stat/exchangeparadox.html)（本書を脱稿してから見つけたおもしろい問題）
+* [Efron--Morris (1975) の野球データ](https://oku.edu.mie-u.ac.jp/~okumura/stat/efronmorris.html)（bayesmetaパッケージの利用例）
+
