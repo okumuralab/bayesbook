@@ -14,7 +14,7 @@ f = function(x) {
 vf = Vectorize(f)
 pb = function(x) (2/pi)*asin(sqrt(x))
 qb = function(z) (sin(pi*z/2))^2
-curve(pb(vf(qb(x))), n=10001, ylim=c(pb(0.72),1), xlab="", ylab="", xaxt="n", yaxt="n")
+curve(pb(vf(qb(x))), n=10001, ylim=c(0.72,1), xlab="", ylab="", xaxt="n", yaxt="n")
 abline(h=pb(0.95), lty=3)
 axis(1, at=pb((0:10)/10), labels=(0:10)/10)
 axis(2, at=pb(seq(0.85,1,0.05)), labels=seq(0.85,1,0.05), las=1)
