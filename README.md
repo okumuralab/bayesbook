@@ -15,6 +15,10 @@
 * アマゾンの[『Rで楽しむベイズ統計入門』のページ](https://www.amazon.co.jp/dp/4774195030)
 * アマゾンの[『Rで楽しむベイズ統計入門』Kindle版](https://www.amazon.co.jp/dp/B07919W1YX)
 
+## 訂正
+
+* p.26 1行目 α/(α+β) = 3/11 は 3/12 です。足し算 3 + 8 を間違いました
+
 ## 蛇足
 
 * [二封筒の問題](https://oku.edu.mie-u.ac.jp/~okumura/stat/exchangeparadox.html)（本書を脱稿してから見つけたおもしろい問題）
